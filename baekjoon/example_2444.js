@@ -25,4 +25,22 @@ const solution = (count) => {
   console.log(result.join("\n"));
 };
 
+// const solution = (count) => {
+//   const maxStar = count * 2 - 1;
+//   const top = [];
+
+//   for (let i = 1; i <= count; i++) {
+//     const emptyCount = count - i;
+//     const starCount = i * 2 - 1;
+
+//     const line = " ".repeat(emptyCount) + "*".repeat(starCount);
+
+//     top.push(line);
+//   }
+
+//   const bottom = structuredClone(top).reverse().slice(1);
+
+//   console.log([...top, ...bottom].join("\n"));
+// };
+
 solution(count);
